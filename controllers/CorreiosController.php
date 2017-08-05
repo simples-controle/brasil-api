@@ -1,12 +1,30 @@
 <?php
 namespace app\controllers;
+
 use SoapClient;
-use yii\rest\ActiveController;
 use PHPHtmlParser\Dom;
+use yii\rest\ActiveController;
+use yii\filters\auth\QueryParamAuth;
+
 
 class CorreiosController extends \yii\rest\Controller
 {
-    
+    public function init()
+    {
+        parent::init();
+        \Yii::$app->user->enableSession = false;
+    }
+
+    public function behaviors()
+    {
+        $behaviors = parent::behaviors();
+        $behaviors['authenticator'] = [
+            'class' => QueryParamAuth::className(),
+        ];
+        return $behaviors;
+    }
+
+
     public function actionIndex()
     {
     	return 'Essa API não tem metodo padrão, por favor verificar documentação da API.';

@@ -1,13 +1,31 @@
 <?php
 namespace app\controllers;
 
-use yii\rest\ActiveController;
+use SoapClient;
 use PHPHtmlParser\Dom;
+use yii\rest\ActiveController;
+use yii\filters\auth\QueryParamAuth;
+
 use sururulab\BrasilHelper\BrasilHelper;
 
 class GeoController extends \yii\rest\Controller
 {
     
+    public function init()
+    {
+        parent::init();
+        \Yii::$app->user->enableSession = false;
+    }
+
+    public function behaviors()
+    {
+        $behaviors = parent::behaviors();
+        $behaviors['authenticator'] = [
+            'class' => QueryParamAuth::className(),
+        ];
+        return $behaviors;
+    }
+        
     public function actionIndex()
     {
     	return 'Essa API não tem metodo padrão, por favor verificar documentação da API.';

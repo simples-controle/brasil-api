@@ -3,7 +3,9 @@
 /* @var $this yii\web\View */
 
 $this->title = 'SUPER API';
+$token = '';
 if(isset(Yii::$app->user->identity)){
+	$token = Yii::$app->user->identity->auth_key;
 	?>
 	<div  class="bg-primary" style="padding-left:10px;padding-right:10px;">
 		<hr/>
@@ -11,12 +13,12 @@ if(isset(Yii::$app->user->identity)){
 			<b>E-mail de registro: </b><?=Yii::$app->user->identity->username?>
 		</p>
 		<h3>
-			<i class="glyphicon glyphicon-ok"></i> <b>AUTH KEY: </b>
-			<span class="label label-success"><?=Yii::$app->user->identity->auth_key?></span>
+			<i class="glyphicon glyphicon-ok"></i> <b>ACCESS TOKEN: </b>
+			<span class="label label-success"><?=$token ?></span>
 		</h3>
 		<br>
 		<p>
-			Para qualquer consulta a API você precisará usar sua Chave de Autenticação AUTH KEY
+			Para qualquer consulta a API você precisará usar sua Chave de Autenticação ACCESS TOKEN
 		</p>
 		<hr/>
 
@@ -24,8 +26,6 @@ if(isset(Yii::$app->user->identity)){
 	<?php
 }
 ?>
-
-
 
 <hr/>
 <h3> <i class="glyphicon glyphicon-bullhorn"></i> <b>SOBRE A SUPER API</b></h3>
@@ -79,7 +79,7 @@ if(!isset(Yii::$app->user->identity)){
 	<h3> <i class="glyphicon glyphicon-user"></i> <b>CRIE SUA CONTA GRÁTIS</b></h3>
 	<hr/>
 
-	<a href="user-management/auth/registration" class="btn btn-lg btn-success"><i class="glyphicon glyphicon-ok"></i> Criar Conta e Obter Minha Auth Key</a>
+	<a href="user-management/auth/registration" class="btn btn-lg btn-success"><i class="glyphicon glyphicon-ok"></i> Criar Conta e Obter Minha ACCESS TOKEN</a>
 	<a href="user-management/auth/login" class="btn btn-lg btn-primary"><i class="glyphicon glyphicon-user"></i> Logar em minha conta!</a>
 
 	<br>
@@ -107,12 +107,12 @@ if(!isset(Yii::$app->user->identity)){
 			<tr>
 				<td>EURO X REAL</td>
 				<td>Consulta no Yahoo Finance a taxa de câmbio Euro x Real</td>
-				<td><a href="/cambio/euro-real" target="_blank" class="btn btn-block btn-primary">/cambio/euro-real</a></td>
+				<td><a href="/cambio/euro-real/?access-token=<?=$token ?>" target="_blank" class="btn btn-block btn-primary">/cambio/euro-real</a></td>
 			</tr>
 			<tr>
 				<td>DOLAR X REAL</td>
 				<td>Consulta no Yahoo Finance a taxa de câmbio Dólar x Real</td>
-				<td><a href="/cambio/dolar-real" target="_blank" class="btn btn-block btn-primary">/cambio/dolar-real</a></td>
+				<td><a href="/cambio/dolar-real/?access-token=<?=$token ?>" target="_blank" class="btn btn-block btn-primary">/cambio/dolar-real</a></td>
 			</tr>
 			
 		</tbody>
@@ -135,32 +135,32 @@ if(!isset(Yii::$app->user->identity)){
 			<tr>
 				<td>PETR3</td>
 				<td>Consulta no Yahoo Finance o valor da ação da PETROBRAS S/A</td>
-				<td><a href="bovespa/petr3" target="_blank" class="btn btn-block btn-primary">/bovespa/petr3</a></td>
+				<td><a href="bovespa/petr3/?access-token=<?=$token ?>" target="_blank" class="btn btn-block btn-primary">/bovespa/petr3</a></td>
 			</tr>
 			<tr>
 				<td>PETR4</td>
 				<td>Consulta no Yahoo Finance o valor da ação da PETROBRAS S/A</td>
-				<td><a href="bovespa/petr4" target="_blank" class="btn btn-block btn-primary">/bovespa/petr4</a></td>
+				<td><a href="bovespa/petr4/?access-token=<?=$token ?>" target="_blank" class="btn btn-block btn-primary">/bovespa/petr4</a></td>
 			</tr>
 			<tr>
 				<td>TOTS3</td>
 				<td>Consulta no Yahoo Finance o valor da ação da TOTVS SISTEMAS</td>
-				<td><a href="bovespa/tots3" target="_blank" class="btn btn-block btn-primary">/bovespa/tots3</a></td>
+				<td><a href="bovespa/tots3/?access-token=<?=$token ?>" target="_blank" class="btn btn-block btn-primary">/bovespa/tots3</a></td>
 			</tr>
 			<tr>
 				<td>VALE3</td>
 				<td>Consulta no Yahoo Finance o valor da ação da VALE S/A (ANTIGA VALE DO RIO DOCE)</td>
-				<td><a href="bovespa/vale3" target="_blank" class="btn btn-block btn-primary">/bovespa/vale3</a></td>
+				<td><a href="bovespa/vale3/?access-token=<?=$token ?>" target="_blank" class="btn btn-block btn-primary">/bovespa/vale3</a></td>
 			</tr>
 			<tr>
 				<td>VALE5</td>
 				<td>Consulta no Yahoo Finance o valor da ação da VALE S/A (ANTIGA VALE DO RIO DOCE)</td>
-				<td><a href="bovespa/vale5" target="_blank" class="btn btn-block btn-primary">/bovespa/vale5</a><td>
+				<td><a href="bovespa/vale5/?access-token=<?=$token ?>" target="_blank" class="btn btn-block btn-primary">/bovespa/vale5</a><td>
 			</tr>
 			<tr>
 				<td>ELET3</td>
 				<td>Consulta no Yahoo Finance o valor da ação da ELETROBRAS</td>
-				<td><a href="bovespa/elet3" target="_blank" class="btn btn-block btn-primary">/bovespa/elet3</a></td>
+				<td><a href="bovespa/elet3/?access-token=<?=$token ?>" target="_blank" class="btn btn-block btn-primary">/bovespa/elet3</a></td>
 			</tr>
 			<tr>
 				<td>ELET6</td>
@@ -170,17 +170,17 @@ if(!isset(Yii::$app->user->identity)){
 			<tr>
 				<td>BBAS3</td>
 				<td>Consulta no Yahoo Finance o valor da ação da BANCO DO BRASIL S/A</td>
-				<td><a href="bovespa/bbsa3" target="_blank" class="btn btn-block btn-primary">/bovespa/bbsa3</a></td>
+				<td><a href="bovespa/bbsa3/?access-token=<?=$token ?>" target="_blank" class="btn btn-block btn-primary">/bovespa/bbsa3</a></td>
 			</tr>
 			<tr>
 				<td>BBDC3</td>
 				<td>Consulta no Yahoo Finance o valor da ação da BANCO bradesco S/A</td>
-				<td><a href="bovespa/bbdc3" target="_blank" class="btn btn-block btn-primary">/bovespa/bbdc3</a></td>
+				<td><a href="bovespa/bbdc3/?access-token=<?=$token ?>" target="_blank" class="btn btn-block btn-primary">/bovespa/bbdc3</a></td>
 			</tr>
 			<tr>
 				<td>BBDC4</td>
 				<td>Consulta no Yahoo Finance o valor da ação da BANCO bradesco S/A</td>
-				<td><a href="bovespa/bbdc4" target="_blank" class="btn btn-block btn-primary">/bovespa/bbdc4</a></td>
+				<td><a href="bovespa/bbdc4/?access-token=<?=$token ?>" target="_blank" class="btn btn-block btn-primary">/bovespa/bbdc4</a></td>
 			</tr>
 		</tbody>
 	</table>
@@ -202,7 +202,7 @@ if(!isset(Yii::$app->user->identity)){
 			<tr>
 				<td>CRT</td>
 				<td>Lista de Código+Nome na tabela CODIGO DO REGIME TRIBUTÁRIO (CRT)</td>
-				<td><a href="contabil/crt" target="_blank" class="btn btn-block btn-primary">/contabil/crt</a></td>
+				<td><a href="contabil/crt/?access-token=<?=$token ?>" target="_blank" class="btn btn-block btn-primary">/contabil/crt</a></td>
 			</tr>
 			
 			
@@ -230,7 +230,7 @@ if(!isset(Yii::$app->user->identity)){
 				<td>
 					Consulta um determinado CEP e retorna dados de logradouro, bairro, cidade, uf, códigos ibge da localidade.
 				</td>
-				<td><a href="correios/consulta-cep?cep=57046-831" target="_blank" class="btn btn-block btn-primary">correios/consulta-cep?cep=57046-831</a></td>
+				<td><a href="correios/consulta-cep?cep=57046-831&access-token=<?=$token ?>" target="_blank" class="btn btn-block btn-primary">correios/consulta-cep?cep=57046-831</a></td>
 			</tr>
 			
 			
@@ -257,7 +257,7 @@ if(!isset(Yii::$app->user->identity)){
 				<td>
 					Retorna uma lista simples do tipo SIGLA => ESTADO com todos os estados brasileiros.
 				</td>
-				<td><a href="geo/estados" target="_blank" class="btn btn-block btn-primary">geo/estados</a></td>
+				<td><a href="geo/estados/?access-token=<?=$token ?>" target="_blank" class="btn btn-block btn-primary">geo/estados</a></td>
 			</tr>
 			
 			
@@ -285,7 +285,7 @@ if(!isset(Yii::$app->user->identity)){
 				<td>
 					Retorna uma lista simples do tipo CÓDIGO => BANCO com todos os bancos brasileiros.
 				</td>
-				<td><a href="financeiro/bancos" target="_blank" class="btn btn-block btn-primary">financeiro/bancos</a></td>
+				<td><a href="financeiro/bancos/?access-token=<?=$token ?>" target="_blank" class="btn btn-block btn-primary">financeiro/bancos</a></td>
 			</tr>
 			
 			
@@ -320,7 +320,7 @@ if(!isset(Yii::$app->user->identity)){
 					<br>
 					Por exemplo 321/riodejaneiro-rj para Cidade do Rio de Janeiro (RJ).
 				</td>
-				<td><a href="tempo/agora?cidade=321/riodejaneiro-rj" target="_blank" class="btn btn-block btn-primary">tempo/agora?cidade=321/riodejaneiro-rj</a></td>
+				<td><a href="tempo/agora?cidade=321/riodejaneiro-rj&access-token=<?=$token ?>" target="_blank" class="btn btn-block btn-primary">tempo/agora?cidade=321/riodejaneiro-rj</a></td>
 			</tr>
 			
 			
