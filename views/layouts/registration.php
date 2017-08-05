@@ -19,7 +19,7 @@ AppAsset::register($this);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?= Html::csrfMetaTags() ?>
-    <title>SUPER API | CRIE SUA CONTA</title>
+    <title>BRASIL API | CRIE SUA CONTA</title>
     <?php $this->head() ?>
     <style type="text/css">
         html, body {
@@ -42,7 +42,7 @@ AppAsset::register($this);
     <div class="container text-center">
         <hr/>
         <h3 class="text-center">
-            <b>SUPER API</b>
+            <b>BRASIL API</b>
             |
             <small>CRIE SUA CONTA</small>
 

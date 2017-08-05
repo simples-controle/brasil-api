@@ -30,7 +30,7 @@ AppAsset::register($this);
 
     <div class="container text-center">
         <hr/>
-        <h3><b>SUPER API</b></h3>
+        <h3><b>BRASIL API</b></h3>
         <small>Login</small>
         <hr/>
         <?= $content ?>

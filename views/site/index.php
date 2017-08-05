@@ -2,7 +2,7 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'SUPER API';
+$this->title = 'BRASIL API';
 $token = '';
 if(isset(Yii::$app->user->identity)){
 	$token = Yii::$app->user->identity->auth_key;
@@ -28,10 +28,10 @@ if(isset(Yii::$app->user->identity)){
 ?>
 
 <hr/>
-<h3> <i class="glyphicon glyphicon-bullhorn"></i> <b>SOBRE A SUPER API</b></h3>
+<h3> <i class="glyphicon glyphicon-bullhorn"></i> <b>SOBRE A BRASIL API</b></h3>
 <hr/>
 <p>
-	A Super API é um projeto que tem o objetivo de ajudar desenvolvedores, web designers e estudantes a integrar dados aos seus projetos, 
+	A BRASIL API é um projeto que tem o objetivo de ajudar desenvolvedores, web designers e estudantes a integrar dados aos seus projetos, 
 	sejam sites, aplicativos mobile ou plataformas web. 
 	Não somos a fonte do dado, e sim um HUB de dados, 
 	conectado a diversas fontes de dados, padronizando, 
