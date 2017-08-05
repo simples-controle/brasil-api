@@ -1,0 +1,64 @@
+<?php
+
+/* @var $this \yii\web\View */
+/* @var $content string */
+
+use yii\helpers\Html;
+use yii\bootstrap\Nav;
+use yii\bootstrap\NavBar;
+use yii\widgets\Breadcrumbs;
+use app\assets\AppAsset;
+
+AppAsset::register($this);
+?>
+<?php $this->beginPage() ?>
+<!DOCTYPE html>
+<html lang="<?= Yii::$app->language ?>">
+<head>
+    <meta charset="<?= Yii::$app->charset ?>">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <?= Html::csrfMetaTags() ?>
+    <title>SUPER API | LOGIN <?= Html::encode($this->title) ?></title>
+    <?php $this->head() ?>
+    <style type="text/css">
+        html, body {
+            background: #eee;
+            -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+            box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+            height: 100%;
+            min-height: 100%;
+            position: relative;
+        }
+
+    </style>
+</head>
+<body>
+<?php $this->beginBody() ?>
+
+<div class="wrap">
+    
+
+    <div class="container text-center">
+        <hr/>
+        <h3 class="text-center">
+            <b>SUPER API</b>
+            |
+            <small>ENTRE NA SUA CONTA</small>
+
+        </h3>
+        <a href="/?r=/">Voltar ao site</a>
+        |
+        <a href="/?r=/user-management/auth/registration"> Criar sua conta</a>
+
+        <hr/>
+        <?= $content ?>
+        <hr/>
+    </div>
+</div>
+
+
+<?php $this->endBody() ?>
+</body>
+</html>
+<?php $this->endPage() ?>
