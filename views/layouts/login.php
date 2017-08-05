@@ -47,9 +47,9 @@ AppAsset::register($this);
             <small>ENTRE NA SUA CONTA</small>
 
         </h3>
-        <a href="/?r=/">Voltar ao site</a>
+        <a href="/">Voltar ao site</a>
         |
-        <a href="/?r=/user-management/auth/registration"> Criar sua conta</a>
+        <a href="/user-management/auth/registration"> Criar sua conta</a>
 
         <hr/>
         <?= $content ?>
