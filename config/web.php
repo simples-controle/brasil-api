@@ -52,20 +52,6 @@ $config = [
         ],
         'mailer' => [
             'class' => 'yii\swiftmailer\Mailer',
-            'transport' => [
-                'class' => 'Swift_SmtpTransport',
-                'host' => 'smtpout.secureserver.net',  // e.g. smtp.mandrillapp.com or smtp.gmail.com
-                'username' => 'mailer@simplescontrole.com.br',
-                'password' => 'eitaporra@51',
-                'port' => '465', // Port 25 is a very common port too
-                'encryption' => 'ssl', // It is often used, check your provider or mail server specs
-                'streamOptions' => [
-                    'ssl' => [
-                        'verify_peer' => false,
-                        'verify_peer_name' => false,
-                    ],
-                ],
-            ],
         ],
         /*
         'urlManager' => [
