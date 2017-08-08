@@ -107,7 +107,7 @@ if(!isset(Yii::$app->user->identity))
 		<thead>
 			<th style="width:15%">API</th>
 			<th style="width:55%">DESCRIÇÃO</th>
-			<th style="width:30%">METÓDO</th>
+			<th style="width:30%">MÉTODO</th>
 		</thead>
 		<tbody>
 			<tr>
@@ -135,7 +135,7 @@ if(!isset(Yii::$app->user->identity))
 		<thead>
 			<th style="width:15%">API</th>
 			<th style="width:55%">DESCRIÇÃO</th>
-			<th style="width:30%">METÓDO</th>
+			<th style="width:30%">MÉTODO</th>
 		</thead>
 		<tbody>
 			<tr>
@@ -202,7 +202,7 @@ if(!isset(Yii::$app->user->identity))
 		<thead>
 			<th style="width:15%">API</th>
 			<th style="width:55%">DESCRIÇÃO</th>
-			<th style="width:30%">METÓDO</th>
+			<th style="width:30%">MÉTODO</th>
 		</thead>
 		<tbody>
 			<tr>
@@ -228,7 +228,7 @@ if(!isset(Yii::$app->user->identity))
 		<thead>
 			<th style="width:15%">API</th>
 			<th style="width:55%">DESCRIÇÃO</th>
-			<th style="width:30%">METÓDO</th>
+			<th style="width:30%">MÉTODO</th>
 		</thead>
 		<tbody>
 			<tr>
@@ -255,7 +255,7 @@ if(!isset(Yii::$app->user->identity))
 		<thead>
 			<th style="width:15%">API</th>
 			<th style="width:55%">DESCRIÇÃO</th>
-			<th style="width:30%">METÓDO</th>
+			<th style="width:30%">MÉTODO</th>
 		</thead>
 		<tbody>
 			<tr>
@@ -283,7 +283,7 @@ if(!isset(Yii::$app->user->identity))
 		<thead>
 			<th style="width:15%">API</th>
 			<th style="width:55%">DESCRIÇÃO</th>
-			<th style="width:30%">METÓDO</th>
+			<th style="width:30%">MÉTODO</th>
 		</thead>
 		<tbody>
 			<tr>
@@ -311,7 +311,7 @@ if(!isset(Yii::$app->user->identity))
 		<thead>
 			<th style="width:15%">API</th>
 			<th style="width:55%">DESCRIÇÃO</th>
-			<th style="width:30%">METÓDO</th>
+			<th style="width:30%">MÉTODO</th>
 		</thead>
 		<tbody>
 			<tr>
