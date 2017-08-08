@@ -4,7 +4,8 @@
 
 $this->title = 'BRASIL API';
 $token = '';
-if(isset(Yii::$app->user->identity)){
+if(isset(Yii::$app->user->identity))
+{
 	$token = Yii::$app->user->identity->auth_key;
 	?>
 	<div  class="bg-primary" style="padding-left:10px;padding-right:10px;">
@@ -44,21 +45,18 @@ if(isset(Yii::$app->user->identity)){
 	que a subistituia, essa API sairá do ar, 
 	pois ficaremos sem fonte de dados para conectarmos 
 	ao nosso HUB de webservices. 
-	
 </p>
-
-
 <br/>
 <hr/>
+
 <h3> <i class="glyphicon glyphicon-thumbs-up"></i> <b>AJUDE A MANTER</b></h3>
 <hr/>
-Faça uma doação voluntária ao time desenvolvedor em qualquer valor, isso irá custear o desenvolvimento, domínio, servidores e suporte.
-<br>
+<p>
+	Faça uma doação voluntária ao time desenvolvedor em qualquer valor, isso irá custear o desenvolvimento, domínio, servidores e suporte.
+</p>
 <br>
 <b>Suporte: </b> lbtecnologia@gmail.com
-<br>
-<br>
-	
+<br>	
 <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
 <form action="https://pagseguro.uol.com.br/checkout/v2/donation.html" method="post">
 <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
@@ -68,32 +66,40 @@ Faça uma doação voluntária ao time desenvolvedor em qualquer valor, isso ir�
 <input type="image" src="https://stc.pagseguro.uol.com.br/public/img/botoes/doacoes/184x42-doar-assina.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
 </form>
 <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
-
+<br/>
 
 <?php
-if(!isset(Yii::$app->user->identity)){
+if(!isset(Yii::$app->user->identity))
+{
 	?>
-
-	<br/>
-	<hr/>
+	
 	<h3> <i class="glyphicon glyphicon-user"></i> <b>CRIE SUA CONTA GRÁTIS</b></h3>
 	<hr/>
-
 	<a href="user-management/auth/registration" class="btn btn-lg btn-success"><i class="glyphicon glyphicon-ok"></i> Criar Conta e Obter Minha ACCESS TOKEN</a>
 	<a href="user-management/auth/login" class="btn btn-lg btn-primary"><i class="glyphicon glyphicon-user"></i> Logar em minha conta!</a>
-
-	<br>
-	<br>
+	<br/>
+	<br/>
 	<?php
 }
 ?>
 
-
+<h3> <i class="glyphicon glyphicon-send"></i> <b>SOLICITAÇÃO, FORMATOS E RETORNOS</b></h3>
+<hr/>
+<p>
+	1 - Para verificar o formato da solicitação e retorno, crie sua conta grátis para obter sua chave de acesso (TOKEN) e click no botão azul ao lado da descrição de cada API
+</p>
+<p>
+	2 - O Retorno padrão é XML mas se desejar em JSON basta passar como parâmetro <b>_format=json</b>
+</p>
+<p>
+	3 - Para verificar o retorno de erro basta passar a requisição sem o  parâmetro <b>access-token=json</b> ou consultar essa documentação sem está logado ao site.
+</p>	
 <br/>
 <hr/>
+
+
 <h3> <i class="glyphicon glyphicon-screenshot"></i> <b>API'S</b></h3>
 <hr/>
-
 <div style="border:1px solid #DDDDDD; background:#ECECEC; padding:10px;">
 	<h4 > <i class="glyphicon glyphicon-usd"></i> <b>CÂMBIO</b> </h4>
 	<hr>
