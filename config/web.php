@@ -82,7 +82,7 @@ $config = [
 
              'enableRegistration' => true,
              'useEmailAsLogin' => true,
-             'emailConfirmationRequired' => true,
+             'emailConfirmationRequired' => false,
             // Add regexp validation to passwords. Default pattern does not restrict user and can enter any set of characters.
             // The example below allows user to enter :
             // any set of characters
