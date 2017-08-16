@@ -100,6 +100,50 @@ if(!isset(Yii::$app->user->identity))
 
 <h3> <i class="glyphicon glyphicon-screenshot"></i> <b>API'S</b></h3>
 <hr/>
+
+
+<div style="border:1px solid #DDDDDD; background:#ECECEC; padding:10px;">
+	<h4 > <i class="glyphicon glyphicon-bitcoin"></i> <b>BITCOIN</b> </h4>
+	<hr>
+	<table class="table table-striped table-bordered table-hover table-responsive">
+		<thead>
+			<th style="width:15%">API</th>
+			<th style="width:55%">DESCRIÇÃO</th>
+			<th style="width:30%">MÉTODO</th>
+		</thead>
+		<tbody>
+			<tr>
+				<td>BITCOIN X REAL</td>
+				<td>Consulta taxa btc x brl</td>
+				<td><a href="/bitcoin/bitcoin-real/?access-token=<?=$token ?>" target="_blank" class="btn btn-block btn-primary">/bitcoin/bitcoin-real</a></td>
+			</tr>
+			<tr>
+				<td>BITCOIN X DÓLAR (AMERICANO)</td>
+				<td>Consulta taxa btc x usd</td>
+				<td><a href="/bitcoin/bitcoin-dolar/?access-token=<?=$token ?>" target="_blank" class="btn btn-block btn-primary">/bitcoin/bitcoin-dolar</a></td>
+			</tr>
+			<tr>
+				<td>BITCOIN X EURO</td>
+				<td>Consulta taxa btc x eur</td>
+				<td><a href="/bitcoin/bitcoin-euro/?access-token=<?=$token ?>" target="_blank" class="btn btn-block btn-primary">/bitcoin/bitcoin-euro</a></td>
+			</tr>
+			<tr>
+				<td>BITCOIN X YEN (JAPONES)</td>
+				<td>Consulta taxa btc x yen</td>
+				<td><a href="/bitcoin/bitcoin-yen/?access-token=<?=$token ?>" target="_blank" class="btn btn-block btn-primary">/bitcoin/bitcoin-yen</a></td>
+			</tr>
+			<tr>
+				<td>BITCOIN X PESO ARGENTINO</td>
+				<td>Consulta taxa btc x peso argentino</td>
+				<td><a href="/bitcoin/bitcoin-peso-argentino/?access-token=<?=$token ?>" target="_blank" class="btn btn-block btn-primary">/bitcoin/bitcoin-peso-argentino</a></td>
+			</tr>
+		</tbody>
+	</table>
+	<small>Fonte fx-rate.net</small>
+</div>
+
+<br>
+
 <div style="border:1px solid #DDDDDD; background:#ECECEC; padding:10px;">
 	<h4 > <i class="glyphicon glyphicon-usd"></i> <b>CÂMBIO</b> </h4>
 	<hr>

@@ -33,7 +33,8 @@ class ContabilController extends \yii\rest\Controller
 
     public function actionCrt(  )
     {
-    	$data = [
+    	$data = 
+        [
     		['codigo' => '1', 'nome' => 'SIMPLES NACIONAL'],
     		['codigo' => '2', 'nome' => 'SIMPLES NACIONAL – EXCESSO DE SUBLIMITE DE RECEITA BRUTA'],
     		['codigo' => '3', 'nome' => 'REGIME NORMAL']
