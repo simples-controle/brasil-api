@@ -103,6 +103,30 @@ if(!isset(Yii::$app->user->identity))
 
 
 <div style="border:1px solid #DDDDDD; background:#ECECEC; padding:10px;">
+	<h4 > <i class="glyphicon glyphicon-ice-lolly-tasted"></i> <b>MERCADORIAS</b> </h4>
+	<hr>
+	<table class="table table-striped table-bordered table-hover table-responsive">
+		<thead>
+			<th style="width:15%">API</th>
+			<th style="width:55%">DESCRIÇÃO</th>
+			<th style="width:30%">MÉTODO</th>
+		</thead>
+		<tbody>
+			<tr>
+				<td>CONSULTA CÓDIGO BARRAS EAN</td>
+				<td>Consulta ean e retorna dados do produto</td>
+				<td><a href="/mercadoria/consulta/?ean=7894900700046&access-token=<?=$token ?>" target="_blank" class="btn btn-block btn-primary">mercadoria/consulta?ean=7894900700046</a></td>
+			</tr>
+		</tbody>
+	</table>
+	<small>Fonte cosmos.bluesoft.com.br</small>
+</div>
+
+<br>
+
+
+
+<div style="border:1px solid #DDDDDD; background:#ECECEC; padding:10px;">
 	<h4 > <i class="glyphicon glyphicon-bitcoin"></i> <b>BITCOIN</b> </h4>
 	<hr>
 	<table class="table table-striped table-bordered table-hover table-responsive">
