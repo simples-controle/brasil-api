@@ -13,9 +13,61 @@ hr{
     padding: 0 0 60px;
 }
 
-.wrap > .container {
+.wrap > .index-section {
     padding: 70px 15px 20px;
 }
+
+/*Index.php*/
+.hero-image-holder{
+    height: 100vh;
+    background-image:linear-gradient(
+      rgba(0, 0, 0, 0.45), 
+      rgba(0, 0, 0, 0.45)
+    ), url(/img/palacio-do-planaltocropped.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+    text-align: center;
+}
+.hero-image-holder h3{
+    font-size: 78px;
+    text-align: left;
+    margin-top: 230px;
+    margin-left: 6%;
+}
+@media screen and (max-width: 730px){
+    .hero-image-holder h3{
+        margin-top: 160px;
+    }
+}
+.hero-image-holder h4{
+    margin-left: 6%;
+    text-align: left;
+}
+
+.hero-image-holder .down-button{
+    position: absolute;
+    bottom: 0;
+    background:transparent;
+    border:none;
+    margin: 0 auto;
+    font-size: 30px;
+    animation: MoveUpDown 1s linear infinite;
+}
+@keyframes MoveUpDown {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 10px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+/* /.Index.php */
+
 
 .footer {
     height: 60px;

@@ -59,7 +59,7 @@ AppAsset::register($this);
     NavBar::end();
     ?>
 
-    <div class="container">
+    <div class="main-container">
         
         <?= $content ?>
     </div>
