@@ -45,27 +45,6 @@ hr{
     margin-left: 6%;
     text-align: left;
 }
-
-.hero-image-holder .down-button{
-    position: absolute;
-    bottom: 0;
-    background:transparent;
-    border:none;
-    margin: 0 auto;
-    font-size: 30px;
-    animation: MoveUpDown 1s linear infinite;
-}
-@keyframes MoveUpDown {
-  0% {
-    bottom: 0;
-  }
-  50% {
-    bottom: 10px;
-  }
-  100% {
-    bottom: 0;
-  }
-}
 /* /.Index.php */
 
 

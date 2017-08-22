@@ -31,7 +31,6 @@ if(isset(Yii::$app->user->identity))
 <figure class="hero-image-holder container-fluid">
 	<h3>BRASIL API</h3>
 	<h4>Um HUB de dados para desenvolvedores brasileiros</h4>
-	<button class="down-button"><span class="glyphicon glyphicon-chevron-down"></span></button>
 </figure>
 <section class="container">
 		
