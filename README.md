@@ -13,9 +13,9 @@ Desenvolvido em PHP usando o Framework Yii2 e seus recursos para construção de
 
 Como colaborar?
 --
-1 - Abrindo issues sobre novas API's ou melhorias e erros nas atuais, nesse caso procure e informe posíveis fontes de dados na issue e reporte sempre as menssagens de erro caso seja um bug.
+1 - Abrindo issues sobre novas API's ou melhorias e erros nas atuais, nesse caso procure e informe possíveis fontes de dados na issue e reporte sempre as menssagens de erro caso seja um bug.
 
-2 - Codificando e submetendo PR com correçes, melhorias, novas API's, etc.
+2 - Codificando e submetendo PR com correções, melhorias, novas API's, etc.
 
 Como instalar o ambiente para desenvolvimento?
 -----
@@ -32,7 +32,7 @@ Pra instalar seu ambiente de desenvolvimento:
 git clone https://github.com/sururulab/brasil-api
 ``
 
-2 - Depois, na pasta raíz d oprojeto rode o comando composer abaixo para atualizar as dependencias do projeto:
+2 - Depois, na pasta raíz do projeto rode o comando composer abaixo para atualizar as dependencias do projeto:
 
 ``
 composer update
@@ -56,9 +56,9 @@ Se tudo deu certo você já pode acessar o ambiente via navegador.
 E ao programar?
 -----
 
-Seguir e usar o máximo de coisas e padres já estabelecidos pelo YII2 Framework (www.yiiframework.com) e os padres (stand) do PHP.
+Seguir e usar o máximo de coisas e padrões já estabelecidos pelo YII2 Framework (www.yiiframework.com) e os padrões (stand) do PHP.
 
-Sempre que construír uma nova API (controlador restfull) ou um novo método em algum existente, documentar o mesmo na view abaixo:
+Sempre que construir uma nova API (controlador restfull) ou um novo método em algum existente, documentar o mesmo na view abaixo:
 
 ``
 views/site/index.php
