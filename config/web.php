@@ -60,7 +60,7 @@ $config = [
             'rules' => [
             ],
         ],
-        */,
+        */
         
         'configComponent' => [
             'class' => 'app\components\ConfigComponent',
