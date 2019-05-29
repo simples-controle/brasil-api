@@ -4,7 +4,7 @@ BRASIL API
 
 Brasil API é um projeto que tem o objetivo de ser um HUB de dados para desenvolvedores brasileiros. Ele deve concentrar todos os tipos de dados possíveis que desenvolvedores costumam capturar (aka catar) por aí em diversas fontes, ou por falta de experiência e conhecimento não conseguem fazer captações mais complexas como buscar e processar html (DOM) de terceiros no backend.
 
-Para usar, é preciso criar uma conta e ter uma access token no site do projeto www.brasilapi.com e lá tem instruções sobre todas as API's em produção (rodando).
+Para usar, é preciso criar uma conta e ter uma access token no site do projeto http://brasilapi.simplescontrole.com.br/ e lá tem instruções sobre todas as API's em produção (rodando).
 
 Tecnologia empregada
 --
