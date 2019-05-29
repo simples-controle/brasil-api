@@ -44,7 +44,12 @@ composer update
 config/db.php
 ``
 
-4 - E por fim implante no banco as suas novas versões, isso  feito atráves dos migrations, para isso rode o comando:
+4 -Executar comando abaixo para poder criar a tabela de usuários e permissões:
+
+``
+./yii migrate --migrationPath=vendor/webvimark/module-user-management/migrations/
+``
+5 - E por fim implante no banco as suas novas versões, isso  feito atráves dos migrations, para isso rode o comando:
 
 ``
 php yii migrate
