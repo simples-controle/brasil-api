@@ -49,6 +49,7 @@ config/db.php
 ``
 ./yii migrate --migrationPath=vendor/webvimark/module-user-management/migrations/
 ``
+
 5 - E por fim implante no banco as suas novas versões, isso  feito atráves dos migrations, para isso rode o comando:
 
 ``
