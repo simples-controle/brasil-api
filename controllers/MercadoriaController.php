@@ -92,19 +92,4 @@ class MercadoriaController extends \yii\rest\Controller
             return $superapi;
         }
     }
-    public function actionConsultaNcms($ncm)
-    {
-        $config = Config::find()->one();
-        $urlJson = "https://api.cosmos.bluesoft.com.br/ncms/" . $ncm .'/products' ;
-        $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, $urlJson);
-        curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json; charset=utf-8',
-         'X-Cosmos-Token: '. $config->cosmos_key));
-        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-        $json_data = curl_exec($ch);
-        curl_close($ch);
-        $json_data = json_decode($json_data, true);
-        return $json_data;
-    }
 }	
