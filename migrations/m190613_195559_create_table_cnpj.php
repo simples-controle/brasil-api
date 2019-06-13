@@ -3,9 +3,9 @@
 use yii\db\Migration;
 
 /**
- * Class m190611_185832_create_table_cnpj
+ * Class m190613_195559_create_table_cnpj
  */
-class m190611_185832_create_table_cnpj extends Migration
+class m190613_195559_create_table_cnpj extends Migration
 {
     /**
      * @inheritdoc
@@ -43,7 +43,7 @@ class m190611_185832_create_table_cnpj extends Migration
             'cnae_id' => $this->integer()->notNull(),
         ]);
 
-         $this->addForeignKey(
+        $this->addForeignKey(
             'fk-cnpj-cnae_id',
             'cnpj',
             'cnae_id',
@@ -57,7 +57,7 @@ class m190611_185832_create_table_cnpj extends Migration
      */
     public function safeDown()
     {
-        echo "m190611_185832_create_table_cnpj cannot be reverted.\n";
+        echo "m190613_195559_create_table_cnpj cannot be reverted.\n";
 
         return false;
     }
@@ -71,7 +71,7 @@ class m190611_185832_create_table_cnpj extends Migration
 
     public function down()
     {
-        echo "m190611_185832_create_table_cnpj cannot be reverted.\n";
+        echo "m190613_195559_create_table_cnpj cannot be reverted.\n";
 
         return false;
     }

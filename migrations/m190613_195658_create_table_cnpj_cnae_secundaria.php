@@ -3,9 +3,9 @@
 use yii\db\Migration;
 
 /**
- * Class m190612_141415_create_table_cnpj_cnae_secundaria
+ * Class m190613_195658_create_table_cnpj_cnae_secundaria
  */
-class m190612_141415_create_table_cnpj_cnae_secundaria extends Migration
+class m190613_195658_create_table_cnpj_cnae_secundaria extends Migration
 {
     /**
      * @inheritdoc
@@ -40,7 +40,7 @@ class m190612_141415_create_table_cnpj_cnae_secundaria extends Migration
      */
     public function safeDown()
     {
-        echo "m190612_141415_create_table_cnpj_cnae_secundaria cannot be reverted.\n";
+        echo "m190613_195658_create_table_cnpj_cnae_secundaria cannot be reverted.\n";
 
         return false;
     }
@@ -54,7 +54,7 @@ class m190612_141415_create_table_cnpj_cnae_secundaria extends Migration
 
     public function down()
     {
-        echo "m190612_141415_create_table_cnpj_cnae_secundaria cannot be reverted.\n";
+        echo "m190613_195658_create_table_cnpj_cnae_secundaria cannot be reverted.\n";
 
         return false;
     }
