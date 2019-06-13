@@ -130,6 +130,28 @@ if(isset(Yii::$app->user->identity))
 
 	<br>
 
+	<div style="border:1px solid #DDDDDD; background:#ECECEC; padding:10px;">
+		<h4 > <i class="glyphicon glyphicon-home"></i> <b>EMPRESAS</b> </h4>
+		<hr>
+		<table class="table table-striped table-bordered table-hover table-responsive">
+			<thead>
+				<th style="width:15%">API</th>
+				<th style="width:55%">DESCRIÇÃO</th>
+				<th style="width:30%">MÉTODO</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>CONSULTA EMPRESAS POR CNPJ</td>
+					<td>Consulta cnpj e retorna dados da empresa</td>
+					<td><a href="/cnpj/consulta-cnpj/?cnpj=10808835000126&access-token=<?=$token ?>" target="_blank" class="btn btn-block btn-primary">cnpj/consulta-cnpj?cnpj=10808835000126</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<small>Fonte receitaws.com.br/</small>
+	</div>
+
+	<br>
+
 
 
 	<div style="border:1px solid #DDDDDD; background:#ECECEC; padding:10px;">
