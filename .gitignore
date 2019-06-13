@@ -34,3 +34,4 @@ web/produto_img/
 web/marca_img/
 web/codigo_barras_img/
 
+config/db.php
