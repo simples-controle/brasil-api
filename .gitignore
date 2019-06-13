@@ -29,3 +29,8 @@ phpunit.phar
 tests/_output/*
 tests/_support/_generated
 config/db.php
+
+web/produto_img/
+web/marca_img/
+web/codigo_barras_img/
+
