@@ -77,7 +77,7 @@ class CnpjController extends \yii\rest\Controller
                 
                 if($cnpjObj->save())
                 {
-                    if(count(isset($json_data['atividades_secundarias']))>0)
+                    if(isset($json_data['atividades_secundarias']) && count($json_data['atividades_secundarias'])>0)
                     {
                         foreach ($json_data['atividades_secundarias'] as $key => $atividades_secundarias) 
                         {
